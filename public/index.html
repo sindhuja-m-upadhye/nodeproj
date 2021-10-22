@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> document </title>
+    </head>
+
+    <body>
+        <script>
+            if('geolocation' in navigator) {
+  /* geolocation is available */
+  console.log("geo location available")
+  navigator.geolocation.getCurrentPosition((position) => 
+  {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      document.getElementById('latitude').textContent=lat;
+      document.getElementById('longitude').textContent=lon;
+
+      //console.log(position);
+     
+      
+  });
+} else {
+  /* geolocation IS NOT available */
+  console.log("geo location is not available")
+}
+        </script>
+        <h1> data selfie app</h1>
+        <p>   lattitude :<span id = "latitude"></span>&deg;<br/>
+              longitude :<span id = "longitude"></span>&deg;
+        </p>
+    </body>
+
+</html>

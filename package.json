@@ -1,0 +1,23 @@
+{
+  "name": "nodeproj",
+  "version": "1.0.0",
+  "description": "this is the selfie app by joey lee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "example , data , selfie"
+  },
+  "keywords": [
+    "\u001b[A\u001b[Bexample",
+    "data",
+    "selfie"
+  ],
+  "author": "sindhuja v m updhye",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
